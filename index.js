@@ -15,7 +15,7 @@ var User = new Schema({
   pending: {
     created: Date,
     timezone: Number, // UTC -5 entered as -5
-    level: Number, // Based on FCC levels completed?
+    fccScore: Number, // Based on FCC levels completed?
   }
 });
 
@@ -45,7 +45,7 @@ var user1 = new UserConstructor(
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
       timezone: 5, 
-      level: 300
+      fccScore: 300
     }
   }
 )
@@ -73,7 +73,7 @@ var user2 = new UserConstructor(
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
       timezone: 5, 
-      level: 300
+      fccScore: 300
     }
   }
 )
@@ -101,7 +101,7 @@ var user3 = new UserConstructor(
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
       timezone: 8, 
-      level: 300
+      fccScore: 300
     }
   }
 )
@@ -129,7 +129,7 @@ var user4 = new UserConstructor(
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
       timezone: 8, 
-      level: 300
+      fccScore: 300
     }
   }
 )
@@ -157,7 +157,7 @@ var user5 = new UserConstructor(
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
       timezone: 8, 
-      level: 300
+      fccScore: 300
     }
   }
 )
@@ -185,7 +185,7 @@ var user6 = new UserConstructor(
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
       timezone: -5, 
-      level: 300
+      fccScore: 300
     }
   }
 )
@@ -213,7 +213,7 @@ var user7 = new UserConstructor(
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
       timezone: -4, 
-      level: 300
+      fccScore: 300
     }
   }
 )
@@ -241,7 +241,7 @@ var user8 = new UserConstructor(
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
       timezone: 0, 
-      level: 300
+      fccScore: 300
     }
   }
 )
@@ -269,7 +269,7 @@ var user9 = new UserConstructor(
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
       timezone: 0, 
-      level: 300
+      fccScore: 300
     }
   }
 )
@@ -297,7 +297,7 @@ var user10 = new UserConstructor(
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
       timezone: 10, 
-      level: 300
+      fccScore: 300
     }
   }
 )
@@ -325,7 +325,7 @@ var user11 = new UserConstructor(
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
       timezone: 5, 
-      level: 300
+      fccScore: 300
     }
   }
 )
