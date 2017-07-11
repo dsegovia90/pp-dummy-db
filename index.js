@@ -12,10 +12,12 @@ var User = new Schema({
     image: String,
     team: Object
   },
-  pending: {
-    created: Date,
+  profile: {
     timezone: Number, // UTC -5 entered as -5
     fccScore: Number, // Based on FCC levels completed?
+  },
+  pending: {
+    created: Date
   }
 });
 
@@ -30,22 +32,17 @@ var user1 = new UserConstructor(
       image: '',
       team: {
         image_original: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_original.jpg',
-        image_230: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_230.jpg',
-        image_132: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_132.jpg',
-        image_102: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_102.jpg',
-        image_88: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_88.jpg',
-        image_68: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_68.jpg',
-        image_44: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_44.jpg',
-        image_34: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_34.jpg',
         domain: 'chingu-honeybadgers',
         name: 'Chingu-HoneyBadgers',
         id: 'T5P5QHJKB'
       }
     },
-    pending: {
-      created: '2017-07-06T10:18:23.070-05:00',
+    profile: {
       timezone: 5, 
       fccScore: 300
+    },
+    pending: {
+      created: '2017-07-06T10:18:23.070-05:00',
     }
   }
 )
@@ -58,22 +55,17 @@ var user2 = new UserConstructor(
       image: '',
       team: {
         image_original: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_original.jpg',
-        image_230: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_230.jpg',
-        image_132: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_132.jpg',
-        image_102: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_102.jpg',
-        image_88: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_88.jpg',
-        image_68: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_68.jpg',
-        image_44: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_44.jpg',
-        image_34: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_34.jpg',
         domain: 'chingu-honeybadgers',
         name: 'Chingu-HoneyBadgers',
         id: 'T5P5QHJKB'
       }
     },
-    pending: {
-      created: '2017-07-06T10:18:23.070-05:00',
+    profile: {
       timezone: 5, 
       fccScore: 300
+    },
+    pending: {
+      created: '2017-07-06T10:18:23.070-05:00',
     }
   }
 )
@@ -86,22 +78,17 @@ var user3 = new UserConstructor(
       image: '',
       team: {
         image_original: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_original.jpg',
-        image_230: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_230.jpg',
-        image_132: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_132.jpg',
-        image_102: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_102.jpg',
-        image_88: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_88.jpg',
-        image_68: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_68.jpg',
-        image_44: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_44.jpg',
-        image_34: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_34.jpg',
         domain: 'chingu-honeybadgers',
         name: 'Chingu-HoneyBadgers',
         id: 'T5P5QHJKB'
       }
     },
-    pending: {
-      created: '2017-07-06T10:18:23.070-05:00',
+    profile: {
       timezone: 8, 
       fccScore: 300
+    },
+    pending: {
+      created: '2017-07-06T10:18:23.070-05:00',
     }
   }
 )
@@ -114,22 +101,17 @@ var user4 = new UserConstructor(
       image: '',
       team: {
         image_original: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_original.jpg',
-        image_230: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_230.jpg',
-        image_132: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_132.jpg',
-        image_102: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_102.jpg',
-        image_88: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_88.jpg',
-        image_68: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_68.jpg',
-        image_44: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_44.jpg',
-        image_34: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_34.jpg',
         domain: 'chingu-honeybadgers',
         name: 'Chingu-HoneyBadgers',
         id: 'T5P5QHJKB'
       }
     },
-    pending: {
-      created: '2017-07-06T10:18:23.070-05:00',
+    profile: {
       timezone: 8, 
       fccScore: 300
+    },
+    pending: {
+      created: '2017-07-06T10:18:23.070-05:00',
     }
   }
 )
@@ -142,22 +124,17 @@ var user5 = new UserConstructor(
       image: '',
       team: {
         image_original: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_original.jpg',
-        image_230: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_230.jpg',
-        image_132: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_132.jpg',
-        image_102: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_102.jpg',
-        image_88: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_88.jpg',
-        image_68: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_68.jpg',
-        image_44: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_44.jpg',
-        image_34: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_34.jpg',
         domain: 'chingu-honeybadgers',
         name: 'Chingu-HoneyBadgers',
         id: 'T5P5QHJKB'
       }
     },
-    pending: {
-      created: '2017-07-06T10:18:23.070-05:00',
+    profile: {
       timezone: 8, 
       fccScore: 300
+    },
+    pending: {
+      created: '2017-07-06T10:18:23.070-05:00',
     }
   }
 )
@@ -170,22 +147,17 @@ var user6 = new UserConstructor(
       image: '',
       team: {
         image_original: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_original.jpg',
-        image_230: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_230.jpg',
-        image_132: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_132.jpg',
-        image_102: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_102.jpg',
-        image_88: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_88.jpg',
-        image_68: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_68.jpg',
-        image_44: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_44.jpg',
-        image_34: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_34.jpg',
         domain: 'chingu-honeybadgers',
         name: 'Chingu-HoneyBadgers',
         id: 'T5P5QHJKB'
       }
     },
-    pending: {
-      created: '2017-07-06T10:18:23.070-05:00',
+    profile: {
       timezone: -5, 
       fccScore: 300
+    },
+    pending: {
+      created: '2017-07-06T10:18:23.070-05:00',
     }
   }
 )
@@ -198,22 +170,17 @@ var user7 = new UserConstructor(
       image: '',
       team: {
         image_original: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_original.jpg',
-        image_230: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_230.jpg',
-        image_132: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_132.jpg',
-        image_102: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_102.jpg',
-        image_88: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_88.jpg',
-        image_68: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_68.jpg',
-        image_44: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_44.jpg',
-        image_34: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_34.jpg',
         domain: 'chingu-honeybadgers',
         name: 'Chingu-HoneyBadgers',
         id: 'T5P5QHJKB'
       }
     },
-    pending: {
-      created: '2017-07-06T10:18:23.070-05:00',
+    profile: {
       timezone: -4, 
       fccScore: 300
+    },
+    pending: {
+      created: '2017-07-06T10:18:23.070-05:00',
     }
   }
 )
@@ -226,22 +193,17 @@ var user8 = new UserConstructor(
       image: '',
       team: {
         image_original: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_original.jpg',
-        image_230: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_230.jpg',
-        image_132: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_132.jpg',
-        image_102: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_102.jpg',
-        image_88: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_88.jpg',
-        image_68: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_68.jpg',
-        image_44: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_44.jpg',
-        image_34: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_34.jpg',
         domain: 'chingu-honeybadgers',
         name: 'Chingu-HoneyBadgers',
         id: 'T5P5QHJKB'
       }
     },
-    pending: {
-      created: '2017-07-06T10:18:23.070-05:00',
+    profile: {
       timezone: 0, 
       fccScore: 300
+    },
+    pending: {
+      created: '2017-07-06T10:18:23.070-05:00',
     }
   }
 )
@@ -254,22 +216,17 @@ var user9 = new UserConstructor(
       image: '',
       team: {
         image_original: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_original.jpg',
-        image_230: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_230.jpg',
-        image_132: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_132.jpg',
-        image_102: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_102.jpg',
-        image_88: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_88.jpg',
-        image_68: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_68.jpg',
-        image_44: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_44.jpg',
-        image_34: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_34.jpg',
         domain: 'chingu-honeybadgers',
         name: 'Chingu-HoneyBadgers',
         id: 'T5P5QHJKB'
       }
     },
-    pending: {
-      created: '2017-07-06T10:18:23.070-05:00',
+    profile: {
       timezone: 0, 
       fccScore: 300
+    },
+    pending: {
+      created: '2017-07-06T10:18:23.070-05:00',
     }
   }
 )
@@ -282,22 +239,17 @@ var user10 = new UserConstructor(
       image: '',
       team: {
         image_original: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_original.jpg',
-        image_230: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_230.jpg',
-        image_132: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_132.jpg',
-        image_102: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_102.jpg',
-        image_88: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_88.jpg',
-        image_68: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_68.jpg',
-        image_44: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_44.jpg',
-        image_34: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_34.jpg',
         domain: 'chingu-honeybadgers',
         name: 'Chingu-HoneyBadgers',
         id: 'T5P5QHJKB'
       }
     },
-    pending: {
-      created: '2017-07-06T10:18:23.070-05:00',
+    profile: {
       timezone: 10, 
       fccScore: 300
+    },
+    pending: {
+      created: '2017-07-06T10:18:23.070-05:00',
     }
   }
 )
@@ -310,22 +262,17 @@ var user11 = new UserConstructor(
       image: '',
       team: {
         image_original: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_original.jpg',
-        image_230: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_230.jpg',
-        image_132: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_132.jpg',
-        image_102: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_102.jpg',
-        image_88: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_88.jpg',
-        image_68: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_68.jpg',
-        image_44: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_44.jpg',
-        image_34: 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2017-06-09/195331322580_cc610918d8ef413f35b0_34.jpg',
         domain: 'chingu-honeybadgers',
         name: 'Chingu-HoneyBadgers',
         id: 'T5P5QHJKB'
       }
     },
-    pending: {
-      created: '2017-07-06T10:18:23.070-05:00',
+    profile: {
       timezone: 5, 
       fccScore: 300
+    },
+    pending: {
+      created: '2017-07-06T10:18:23.070-05:00',
     }
   }
 )
