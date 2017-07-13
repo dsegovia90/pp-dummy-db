@@ -39,7 +39,7 @@ var user1 = new UserConstructor(
     },
     profile: {
       timezone: 5, 
-      fccScore: 300
+      fccScore: 5
     },
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
@@ -62,7 +62,7 @@ var user2 = new UserConstructor(
     },
     profile: {
       timezone: 5, 
-      fccScore: 300
+      fccScore: 5
     },
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
@@ -85,7 +85,7 @@ var user3 = new UserConstructor(
     },
     profile: {
       timezone: 8, 
-      fccScore: 300
+      fccScore: 5
     },
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
@@ -108,7 +108,7 @@ var user4 = new UserConstructor(
     },
     profile: {
       timezone: 8, 
-      fccScore: 300
+      fccScore: 5
     },
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
@@ -131,7 +131,7 @@ var user5 = new UserConstructor(
     },
     profile: {
       timezone: 8, 
-      fccScore: 300
+      fccScore: 5
     },
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
@@ -154,7 +154,7 @@ var user6 = new UserConstructor(
     },
     profile: {
       timezone: -5, 
-      fccScore: 300
+      fccScore: 5
     },
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
@@ -177,7 +177,7 @@ var user7 = new UserConstructor(
     },
     profile: {
       timezone: -4, 
-      fccScore: 300
+      fccScore: 5
     },
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
@@ -200,7 +200,7 @@ var user8 = new UserConstructor(
     },
     profile: {
       timezone: 0, 
-      fccScore: 300
+      fccScore: 5
     },
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
@@ -223,7 +223,7 @@ var user9 = new UserConstructor(
     },
     profile: {
       timezone: 0, 
-      fccScore: 300
+      fccScore: 5
     },
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
@@ -246,7 +246,7 @@ var user10 = new UserConstructor(
     },
     profile: {
       timezone: 10, 
-      fccScore: 300
+      fccScore: 5
     },
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
@@ -269,7 +269,7 @@ var user11 = new UserConstructor(
     },
     profile: {
       timezone: 5, 
-      fccScore: 300
+      fccScore: 5
     },
     pending: {
       created: '2017-07-06T10:18:23.070-05:00',
